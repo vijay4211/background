@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* div */
+        .hero-image{
+            color: white;
+            border: 3px solid red;
+            height: 500px;
+            /* height: 700px; */
+            background: url('../spider.jpg') no-repeat center;
+            background-size: cover;
+            position: relative;
+        }
+        /* div */
+        .hero-text{
+            /* pure div ko center me shift kiya hai. */
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* x= -50%,  y= -50% */
+            transform: translate(-50%, -50%);
+            border: 1px solid greenyellow;
+        }
+
+        /* button ke uper hamne padding and width apply ki hai. */
+        .hero-text button{
+            width: 50%;
+            padding: 5px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px">I am John Doe</h1>
+          <h3>And I'm a Photographer</h3>
+          <button>Hire me</button>
+        </div>
+    </div>
+
+<p>Page content..</p>
+<p>Note that this technique will also make the image responsive: Resize the browser window to see the effect.</p>
+</body>
+</html>
